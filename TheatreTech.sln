@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXPlayer", "FXPlayer\FXPlayer.csproj", "{037711B7-C5AB-41A9-939A-87E34F40B4D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalisticTelnet", "..\..\..\..\..\..\SeafileLocal\Seafile\Software Sources\MinimalisticTelnet\MinimalisticTelnet\MinimalisticTelnet.csproj", "{AD79EBB8-1157-4120-99D2-433559991A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cognito2Desk", "Cognito2Desk\Cognito2Desk.csproj", "{5C384A38-C1CD-4CDE-82A9-40633BBC4460}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{037711B7-C5AB-41A9-939A-87E34F40B4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037711B7-C5AB-41A9-939A-87E34F40B4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037711B7-C5AB-41A9-939A-87E34F40B4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037711B7-C5AB-41A9-939A-87E34F40B4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD79EBB8-1157-4120-99D2-433559991A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD79EBB8-1157-4120-99D2-433559991A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD79EBB8-1157-4120-99D2-433559991A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD79EBB8-1157-4120-99D2-433559991A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C384A38-C1CD-4CDE-82A9-40633BBC4460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C384A38-C1CD-4CDE-82A9-40633BBC4460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C384A38-C1CD-4CDE-82A9-40633BBC4460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C384A38-C1CD-4CDE-82A9-40633BBC4460}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0485720-306B-4E9B-85D2-E2B869AC9B84}
+	EndGlobalSection
+EndGlobal
