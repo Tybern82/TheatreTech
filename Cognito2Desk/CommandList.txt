@@ -1,0 +1,51 @@
+﻿Revised: 2/1/2018
+Telnet over Ethernet Communication API
+Select functions of Cognito can be triggered remotely with a Telnet over Ethernet connection.
+If controlling Cognito from a remote PC via Telnet, both that PC and Cognito must have an IP address on the same subnet.
+The easiest way to accomplish this is by using a DHCP router.
+The current IP address of Cognito can be located in the setup window of Cognito. (Press power button).
+Open a Telnet connection to the IP address on Cognito on port 11123.
+Terminal Example:
+telnet 192.168.1.116 port 11123
+Notes:
+- A carriage return <CR> must be sent to execute the command
+- All commands, including item names, are case sensitive
+The example command below would execute cue 4, on “Playlist 1”, using any programmed fade times, wait times, and follow times.
+API.PlayListGotoAndExecuteFollows('Playlist 1', 4) <CR>
+The example command below would release “Playlist 1”.
+API.PlayListAssert('Playlist 1’) <CR>
+Current full list of commands:
+
+* noecho
+* noprompt
+- API.AttributeFade(fixture[,attribute_name],value [,time])
+- API.AttributeFadeCapture(fixture[,attribute_name],value [,time])
+- API.Bump('page_name' | page_index , memory_number, is_down )
+API.ButtonPress('page','name' or order)
+API.MemoryFade('page',memorynumber,value[,seconds])
+API.MemoryFadeRate('page',memorynumber,value[,seconds full scale])
+API.MemoryFadeStop('page',memorynumber)
+print(API.MemoryGetValue('page',memorynumber))
+API.MidiNoteOff(channel_1_to_16,key_1_to_128[,velocity_0_to127])
+API.MidiNoteOn(channel_1_to_16,key_1_to_128[,velocity_0_to127])
+API.MidiWrite(midi_byte[,midi_byte ...])
+API.PlayListAssert('playlist')
+API.PlayListGo('playlist')
+API.PlayListGotoAndExecuteFollows('playlist', cue)
+API.PlayListGotoAndHalt('playlist', cue)
+API.PlayListHalt('playlist')
+API.PlayListHaltBack('playlist')
+API.PlayListRelease('playlist'[,release_time])
+- API.ReleaseAll()
+* API.SerialClose()
+* API.SerialOpen(['script'])
+* API.SerialRead()
+* API.SerialWrite('output string' or binary_byte or table [,...])
+API.SetLevel('fixture_string', 'level_string' [,fade_time_seconds])
+- API.SystemRestart([<maintain state>true|false])
+- API.SystemShutdown()
+API.WriteLogMessage('message', 'category', severity_1_to_10)
+
+
+* Not Being Supported (since these control the telnet interface itself, or interact with the Serial Port control)
+- Completed Interface Operations
